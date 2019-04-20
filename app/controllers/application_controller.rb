@@ -18,8 +18,8 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     #your code here
-    if params[:username] != ""
-    user = User.create(username: params[:username], password: params[:password])
+    if params[:username] != " "
+      user = User.create(username: params[:username], password: params[:password])
     end
     
     if user.save
