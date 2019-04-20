@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     #your code here
     put params
     user = User.new(username: params[:username], password: params[:password])
-    
+
     if user
       redirect '/login'
     else
@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     ##your code here
-    
+
   end
 
   get "/failure" do
